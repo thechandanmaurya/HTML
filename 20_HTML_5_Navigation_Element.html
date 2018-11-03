@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Nav Element</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+        }
+        nav{
+            background-color:orange ;
+            overflow: hidden; /*see below */
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li{
+            float: left; /*overflow the bg  color*/
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:black;
+            padding:12px 25px;
+            display: inline-block;
+        }
+        nav ul li a:hover{
+            background-color: black;
+            color:white;
+
+        }
+        nav ul li a.active{
+            background-color: orangered;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- HTML Nav Element -->
+<nav>
+    <ul>
+        <li>
+            <a href="a" class="active">HOME</a>
+        </li>
+        <li>
+            <a href="a">ABOUT US</a>
+        </li>
+        <li>
+            <a href="a">CONTACT US</a>
+        </li>
+        <li>
+            <a href="a">COURSE</a>
+        </li>
+        <li>
+            <a href="a">COURSE MATERIAL</a>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>
